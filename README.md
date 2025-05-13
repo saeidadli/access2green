@@ -1,6 +1,6 @@
 # Green-Space-Accessibility
 
-This is a Python 3.9+ package for measuring accessibility to green space entrances, designed for urban planners and researchers analysing geospatial data for applications such as hedonic price models. The package uses OpenStreetMap (OSM) data via `osmnx` to identify walking networks and green space boundaries, calculating the total area of accessible green spaces within a specified walking time (default: 15 minutes) from the centroid of input zones (e.g., Traffic Analysis Zones, TAZs).
+This is a Python 3.12+ package for measuring accessibility to green space entrances, designed for urban planners and researchers analysing geospatial data for applications such as hedonic price models. The package uses OpenStreetMap (OSM) data via `osmnx` to identify walking networks and green space boundaries, calculating the total area of accessible green spaces within a specified walking time (default: 15 minutes) from the centroid of input zones (e.g., Traffic Analysis Zones, TAZs).
 
 * The current version calculates accessibility by:
   * Downloading OSM walking networks and green space boundaries (parks, recreation grounds, woods, scrub, grass) within a buffered area around input zones.
@@ -28,11 +28,11 @@ pip install git+https://github.com/saeidadli/green-space-accessibility
 ```
 
 Dependencies:
-* `geopandas`
-* `networkx`
-* `osmnx`
-* `pandas`
-* `shapely`
+* `geopandas 0.14.3`
+* `networkx 3.3`
+* `osmnx 1.9.2`
+* `pandas 2.2.2`
+* `shapely 2.0.4`
 
 Install dependencies manually with:
 ```bash
